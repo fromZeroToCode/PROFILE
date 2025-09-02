@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Justin O. Del Rosario | Digital Business Card</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,500,400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<video autoplay muted loop id="bg-video">
+		<source src="assets/background.mp4" type="video/mp4">
+	</video>
+
+	<div class="card-container">
+		<div class="card-front">
+			<div class="card-logo">
+				<img src="assets/logo.png" alt="Logo" class="logo">
+			</div>
+			<div class="card-profile">
+				<img src="assets/profile.JPG" alt="Profile Picture" class="profile-pic">
+			</div>
+			<h1 id="name">Justin O. Del Rosario</h1>
+			<p class="bio">Aspiring Software Developer | UI/UX Enthusiast</p>
+			<div class="card-contact">
+				<div class="contact-item">
+					<span class="contact-label">Email:</span>
+					<a href="mailto:delrosjustin@gmail.com">delrosjustin@gmail.com</a>
+				</div>
+				<div class="contact-item">
+					<span class="contact-label">Phone:</span>
+					<a href="tel:+639602024594">(+63) 960 202 4594</a>
+				</div>
+				<div class="contact-item">
+					<span class="contact-label">GitHub:</span>
+					<a href="https://github.com/JustDev9" target="_blank">github.com/JustDev9</a>
+				</div>
+				<div class="contact-item">
+					<span class="contact-label">LinkedIn:</span>
+					<a href="https://www.linkedin.com/in/justin-del-rosario-04422736b/" target="_blank">Justin Del Rosario</a>
+				</div>
+			</div>
+			<button id="flipBtn" class="flip-btn">View More Info</button>
+		</div>
+
+		<div class="card-back">
+			<h2>About Me</h2>
+			<p>A BSIT student at Gordon College, Olongapo driven by a passion for designing intuitive interfaces and building robust solutions. Awarded Dean's Lister and received the Award of Merit for Student Leadership.</p>
+
+			<h2>Skills</h2>
+			<div class="skills-grid">
+				<div class="skill">UI/UX Design</div>
+				<div class="skill">Figma</div>
+				<div class="skill">Wireframing</div>
+				<div class="skill">Prototyping</div>
+				<div class="skill">Vue.js</div>
+				<div class="skill">Flask</div>
+				<div class="skill">Java</div>
+			</div>
+
+			<h2>Projects</h2>
+			<div class="project-links">
+				<a href="https://github.com/JustDev9/pawfect-match" target="_blank">PawfectMatch</a>
+				<a href="https://github.com/JustDev9/stockup" target="_blank">StockUp</a>
+				<a href="https://www.figma.com/design/ykqmWh1vOhx1GB4gscOIGg/GapoOneStop-Capstone-?node-id=167-197&t=yAz1ZahjIS496Xkw-1" target="_blank">GapoOneStop</a>
+				<a href="https://straightforward-colors-121545.framer.app/" target="_blank">Portfolio</a>
+			</div>
+
+			<button id="flipBackBtn" class="flip-btn">Back to Card</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

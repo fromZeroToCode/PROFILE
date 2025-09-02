@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,500,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.card-container {
+    width: 375px;
+    height: 695px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding-top: 40px;
+}
+
+.card-front {
+    text-align: center;
+}
+
+.card-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.card-profile {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4f8cff;
+    box-shadow: 0 4px 12px rgba(79, 140, 255, 0.3);
+}
+
+#name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 1rem 0 0.3rem 0;
+    transition: color 0.3s;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #f1f0f0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(39, 68, 122, 0.8), transparent);
+    margin: 1rem auto;
+    box-shadow: 0 0 8px rgba(79, 140, 255, 0.2);
+}
+
+.card-contact {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.contact-item {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: #222;
+    margin-right: 0.5rem;
+    min-width: 80px;
+}
+
+.card-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.card-contact a:hover {
+    color: #fafafa;
+    text-decoration: underline;
+}
+
+.about, .ojt, .projects, .skills {
+	text-align: left;
+	margin-bottom: 1.2rem;
+}
+
+.about h2, .ojt h2, .projects h2, .skills h2 {
+	font-size: 1.15rem;
+	color: #fcfcfc;
+	margin-bottom: 0.3rem;
+	margin-top: 0.7rem;
+}
+
+
+/* Back card styles */
+.card-back h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.5rem;
+}
+
+.card-back p {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0.5rem 0 1.2rem;
+}
+
+.skill {
+    background: rgba(0, 0, 0, 0.5);
+    color: #efefef;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+
+.project-links a {
+    color: #fdfeff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-links a:hover {
+    background-color: rgba(79, 140, 255, 0.9);
+    color: white;
+    box-shadow: 0 4px 10px rgba(79, 140, 255, 0.3);
+}
+
+.flip-btn {
+    background: rgba(84, 144, 254, 0.85);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: auto;
+    align-self: center;
+    margin-top: 1rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(79, 140, 255, 0.3);
+}
+
+.flip-btn:hover {
+    background: rgba(55, 102, 177, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 140, 255, 0.4);
+}
