@@ -12,41 +12,82 @@
 		<source src="assets/background.mp4" type="video/mp4">
 	</video>
 
+	<!-- Navigation Bar -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="nav-logo">
+				<img src="assets/logo.png" alt="Logo">
+				<span>JDR</span>
+			</div>
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<button id="themeToggle" class="theme-toggle">🌙</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Dynamic Greeting -->
+	<div class="greeting-container">
+		<h2 id="dynamicGreeting">Good Day!</h2>
+	</div>
+
 	<div class="card-container">
 		<div class="card-front">
 			<div class="card-logo">
 				<img src="assets/logo.png" alt="Logo" class="logo">
 			</div>
-			<div class="card-profile">
-				<img src="assets/profile.JPG" alt="Profile Picture" class="profile-pic">
+
+			<!-- Left section with profile info -->
+			<div class="card-left">
+				<div class="card-profile">
+					<img src="assets/profile.JPG" alt="Profile Picture" class="profile-pic">
+				</div>
+				<h1 id="name">Justin O. Del Rosario</h1>
+				<p class="bio">Aspiring Software Developer | UI/UX Enthusiast</p>
+				<button id="flipBtn" class="flip-btn">View More Info</button>
 			</div>
-			<h1 id="name">Justin O. Del Rosario</h1>
-			<p class="bio">Aspiring Software Developer | UI/UX Enthusiast</p>
-			<div class="card-contact">
-				<div class="contact-item">
-					<span class="contact-label">Email:</span>
-					<a href="mailto:delrosjustin@gmail.com">delrosjustin@gmail.com</a>
+
+			<!-- Right section with about me and contact info -->
+			<div class="card-right">
+				<div class="about-section">
+					<h2>About Me</h2>
+					<p>A BSIT student at Gordon College, Olongapo driven by a passion for designing intuitive interfaces and building robust solutions. Awarded Dean's Lister and received the Award of Merit for Student Leadership.</p>
 				</div>
-				<div class="contact-item">
-					<span class="contact-label">Phone:</span>
-					<a href="tel:+639602024594">(+63) 960 202 4594</a>
-				</div>
-				<div class="contact-item">
-					<span class="contact-label">GitHub:</span>
-					<a href="https://github.com/JustDev9" target="_blank">github.com/JustDev9</a>
-				</div>
-				<div class="contact-item">
-					<span class="contact-label">LinkedIn:</span>
-					<a href="https://www.linkedin.com/in/justin-del-rosario-04422736b/" target="_blank">Justin Del Rosario</a>
+				<div class="social-cards">
+					<div class="social-card">
+						<div class="social-icon">✉️</div>
+						<div class="social-info">
+							<span class="social-label">Email</span>
+							<a href="mailto:delrosjustin@gmail.com">delrosjustin@gmail.com</a>
+						</div>
+					</div>
+					<div class="social-card">
+						<div class="social-icon">�</div>
+						<div class="social-info">
+							<span class="social-label">Phone</span>
+							<a href="tel:+639602024594">(+63) 960 202 4594</a>
+						</div>
+					</div>
+					<div class="social-card">
+						<div class="social-icon">�</div>
+						<div class="social-info">
+							<span class="social-label">GitHub</span>
+							<a href="https://github.com/JustDev9" target="_blank">github.com/JustDev9</a>
+						</div>
+					</div>
+					<div class="social-card">
+						<div class="social-icon">💼</div>
+						<div class="social-info">
+							<span class="social-label">LinkedIn</span>
+							<a href="https://www.linkedin.com/in/justin-del-rosario-04422736b/" target="_blank">Justin Del Rosario</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<button id="flipBtn" class="flip-btn">View More Info</button>
 		</div>
 
 		<div class="card-back">
-			<h2>About Me</h2>
-			<p>A BSIT student at Gordon College, Olongapo driven by a passion for designing intuitive interfaces and building robust solutions. Awarded Dean's Lister and received the Award of Merit for Student Leadership.</p>
-
 			<h2>Skills</h2>
 			<div class="skills-grid">
 				<div class="skill">UI/UX Design</div>
@@ -69,6 +110,7 @@
 			<button id="flipBackBtn" class="flip-btn">Back to Card</button>
 		</div>
 	</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
